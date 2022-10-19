@@ -11,4 +11,20 @@
 .plan-recurrence {
   margin: 0;
   margin-bottom: 4px;
+  font-weight: 300;
+}
+
+.plan-type,
+.plan-recurrence {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.plan-price {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.plan-recurrence {
+  color: #5f6974;
 }
