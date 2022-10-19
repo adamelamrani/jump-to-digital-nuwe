@@ -1,7 +1,17 @@
 import React from "react";
+import { imageSelector } from "../utils/imageSelector";
 
-const Card: React.FC = (): JSX.Element => {
-  return <div></div>;
+interface CardProps {
+  cardType: string;
+}
+
+const Card: React.FC<CardProps> = ({ cardType }) => {
+  const selectedImage = imageSelector(cardType);
+  return (
+    <div className={cardType}>
+      <img src={selectedImage.class} alt={selectedImage.alt} />
+    </div>
+  );
 };
 
 export default Card;
