@@ -1,5 +1,5 @@
 export const imageSelector = (cardType: string) => {
-  let image = {
+  const image = {
     class: "",
     alt: "",
   };
