@@ -3,7 +3,6 @@
 .heading_tier-two {
   display: flex;
   flex-direction: column;
-  border: 2px solid blue;
   width: fit-content;
 }
 
@@ -28,4 +27,9 @@
 
 .plan-recurrence {
   color: #5f6974;
+}
+
+.heading_tier-one,
+.heading_tier-one > .plan-recurrence {
+  color: #fff;
 }

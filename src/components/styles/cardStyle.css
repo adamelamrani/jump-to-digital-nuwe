@@ -3,8 +3,24 @@
 .tier-two {
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
+  margin: 16px;
+  background-color: #fff;
+}
+
+.tier-zero {
   padding: 16px;
+  justify-content: flex-start;
+}
+
+.tier-one {
+  background-color: #5a45f2;
+  padding: 40px;
+  justify-content: center;
+}
+
+.tier-two {
+  padding: 48px 21px 48px 48px;
+  justify-content: flex-end;
 }
 
 img {
