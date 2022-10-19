@@ -1,0 +1,14 @@
+.heading_tier-zero,
+.heading_tier-one,
+.heading_tier-two {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid blue;
+}
+
+.plan-type,
+.plan-price,
+.plan-recurrence {
+  margin: 0;
+  margin-bottom: 4px;
+}
