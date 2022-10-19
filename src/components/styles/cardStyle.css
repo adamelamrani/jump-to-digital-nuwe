@@ -1,5 +1,12 @@
-.tier-zero {
+.tier-zero,
+.tier-one,
+.tier-two {
   display: flex;
+  flex-direction: column;
   border: 2px solid red;
   padding: 16px;
+}
+
+img {
+  margin-bottom: 16px;
 }
