@@ -1,5 +1,6 @@
 import React from "react";
 import { imageSelector } from "../utils/imageSelector";
+import "./styles/cardStyle.css";
 
 interface CardProps {
   cardType: string;
