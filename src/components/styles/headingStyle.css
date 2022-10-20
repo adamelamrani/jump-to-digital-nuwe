@@ -3,6 +3,7 @@
 .heading_tier-two {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   width: fit-content;
 }
 
