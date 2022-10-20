@@ -8,9 +8,14 @@
   background-color: #e5e5e5;
 }
 
+.main-view-hidden {
+  flex-direction: row;
+}
+
 @media (max-width: 950px) {
   .main-view {
     flex-direction: column;
+    overflow: scroll;
     height: auto;
   }
 }
