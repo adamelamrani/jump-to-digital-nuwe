@@ -68,7 +68,7 @@ li {
   margin-right: 10px;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 950px) {
   .tier-zero:hover,
   .tier-one:hover,
   .tier-two:hover {
