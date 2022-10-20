@@ -1,0 +1,26 @@
+.button_tier-zero,
+.button_tier-one,
+.button_tier-two {
+  height: 40px;
+  border-radius: 8px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
+
+.button_tier-two {
+  width: calc(100% - 27px);
+  background-color: #5a45f2;
+  color: #fff;
+}
+
+.button_tier-one {
+  background-color: #000;
+  color: #fff;
+}
+
+.button_tier-zero {
+  background-color: #fff;
+  border: 1px solid #5a45f2;
+}
