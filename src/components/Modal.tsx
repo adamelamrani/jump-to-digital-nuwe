@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { emailValidation } from "../utils/emailValidation";
 import Button from "./Button";
 import "./styles/modalStyle.css";
@@ -8,12 +8,14 @@ interface ModalProps {
 
 const Modal: React.FC<ModalProps> = ({ setOpenModal }) => {
   const [isEmailWrong, setIsEmailWrong] = useState<boolean>(true);
-  const [email, setEmail] = useState<string>("");
 
   return (
     <div className="modal-backdrop">
       <div className="modal-content-box">
         <h3>We will get in touch with you!</h3>
+        <p className="close-button" onClick={() => setOpenModal(false)}>
+          ❌
+        </p>
         <div className="input-section">
           <p>
             Introduce your e-mail address and we will contact you as soon as
@@ -23,7 +25,6 @@ const Modal: React.FC<ModalProps> = ({ setOpenModal }) => {
             type="email"
             placeholder="email@example.com"
             onChange={(e) => {
-              setEmail(e.target.value);
               if (emailValidation(e.target.value)) {
                 setIsEmailWrong(false);
               }
