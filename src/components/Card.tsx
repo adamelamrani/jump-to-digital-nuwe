@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { imageSelector } from "../utils/imageSelector";
 import Button from "./Button";
 import Heading from "./Heading";
@@ -10,6 +10,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ cardType }) => {
   const selectedImage = imageSelector(cardType);
+  const [openModal, setOpenModal] = useState<boolean>(false);
   return (
     <div className={cardType}>
       <img
