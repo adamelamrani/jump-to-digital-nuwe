@@ -5,11 +5,9 @@ import "./styles/style.css";
 const MainPage: React.FC = () => {
   return (
     <main className="main-view">
-      <div className="card-container">
-        <Card cardType="tier-zero" />
-        <Card cardType="tier-one" />
-        <Card cardType="tier-two" />
-      </div>
+      <Card cardType="tier-zero" />
+      <Card cardType="tier-one" />
+      <Card cardType="tier-two" />
     </main>
   );
 };
