@@ -6,6 +6,7 @@
   margin-right: 16px;
   background-color: #fff;
   border-radius: 8px;
+  transition: box-shadow 0.7s ease-in-out, border 0.1s ease-in-out;
 }
 
 .tier-zero {
@@ -65,4 +66,13 @@ li {
 
 .check-icon {
   margin-right: 10px;
+}
+
+@media (min-width: 400px) {
+  .tier-zero:hover,
+  .tier-one:hover,
+  .tier-two:hover {
+    border: 2px solid;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
 }
