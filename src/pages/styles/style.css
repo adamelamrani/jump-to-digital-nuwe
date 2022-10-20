@@ -7,3 +7,10 @@
   width: 100vw;
   background-color: #e5e5e5;
 }
+
+@media (max-width: 950px) {
+  .main-view {
+    flex-direction: column;
+    height: auto;
+  }
+}
