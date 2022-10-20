@@ -44,6 +44,7 @@ li {
   margin-bottom: 16px;
   display: flex;
   align-items: center;
+  font-size: 14px;
 }
 
 .available-perks_tier-two > li {
