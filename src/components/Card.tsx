@@ -11,8 +11,42 @@ const Card: React.FC<CardProps> = ({ cardType }) => {
   const selectedImage = imageSelector(cardType);
   return (
     <div className={cardType}>
-      <img src={selectedImage.class} alt={selectedImage.alt} />
+      <img
+        className="heading-img"
+        src={selectedImage.class}
+        alt={selectedImage.alt}
+      />
       <Heading classType={cardType} />
+      <ul className={`available-perks_${cardType}`}>
+        <li className="list-element">
+          <img className="check-icon" src="checkIcon.svg" alt="Check icon" />
+          Full courses library
+        </li>
+        <li className="list-element">
+          <img className="check-icon" src="checkIcon.svg" alt="Check icon" />A
+          new daily meditation
+        </li>
+        <li className="list-element">
+          <img className="check-icon" src="checkIcon.svg" alt="Check icon" />
+          Access to the meditation guru
+        </li>
+        <li className="list-element">
+          <img className="check-icon" src="checkIcon.svg" alt="Check icon" />
+          Sleep podcast and exercices
+        </li>
+        <li className="list-element">
+          <img className="check-icon" src="checkIcon.svg" alt="Check icon" />
+          Mindfulness exercices
+        </li>
+        <li className="list-element">
+          <img className="check-icon" src="checkIcon.svg" alt="Check icon" />
+          Guided meditations
+        </li>
+        <li className="list-element">
+          <img className="check-icon" src="checkIcon.svg" alt="Check icon" />
+          Cooking recipes
+        </li>
+      </ul>
     </div>
   );
 };
