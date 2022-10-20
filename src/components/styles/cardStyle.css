@@ -46,6 +46,14 @@ li {
   align-items: center;
 }
 
+.available-perks_tier-zero > li:nth-child(n + 4) {
+  opacity: 0.2;
+}
+
+.available-perks_tier-one > li:nth-child(n + 6) {
+  opacity: 0.5;
+}
+
 .check-icon {
   margin-right: 10px;
 }
