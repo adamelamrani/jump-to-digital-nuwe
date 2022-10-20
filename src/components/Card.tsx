@@ -13,6 +13,15 @@ const Card: React.FC<CardProps> = ({ cardType }) => {
     <div className={cardType}>
       <img src={selectedImage.class} alt={selectedImage.alt} />
       <Heading classType={cardType} />
+      <ul className={`available-perks_${cardType}`}>
+        <li className="list-element">Full courses library</li>
+        <li className="list-element">A new daily meditation</li>
+        <li className="list-element">Access to the meditation guru</li>
+        <li className="list-element">Sleep podcast and exercices</li>
+        <li className="list-element">Mindfulness exercices</li>
+        <li className="list-element">Guided meditations</li>
+        <li className="list-element">Cooking recipes</li>
+      </ul>
     </div>
   );
 };
