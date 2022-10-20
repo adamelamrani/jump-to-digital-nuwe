@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/adamelamrani/jump-to-digital-nuwe/badge)](https://www.codefactor.io/repository/github/adamelamrani/jump-to-digital-nuwe)
+
 # About Jump2Digital/NUWE Hackathon challenge:
 
 In the first phase of this challenge, the developers will have to lay out a group of modular price-cards with the subscription plans offered by a company.
