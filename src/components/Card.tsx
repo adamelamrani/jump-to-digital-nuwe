@@ -1,5 +1,6 @@
 import React from "react";
 import { imageSelector } from "../utils/imageSelector";
+import Button from "./Button";
 import Heading from "./Heading";
 import "./styles/cardStyle.css";
 
@@ -47,6 +48,7 @@ const Card: React.FC<CardProps> = ({ cardType }) => {
           Cooking recipes
         </li>
       </ul>
+      <Button classType={cardType} />
     </div>
   );
 };

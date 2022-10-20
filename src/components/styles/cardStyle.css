@@ -3,7 +3,7 @@
 .tier-two {
   display: flex;
   flex-direction: column;
-  margin: 16px;
+  margin-right: 16px;
   background-color: #fff;
   border-radius: 8px;
 }
