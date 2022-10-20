@@ -46,6 +46,10 @@ li {
   align-items: center;
 }
 
+.available-perks_tier-two > li {
+  margin-bottom: 12px;
+}
+
 .available-perks_tier-zero > li:nth-child(n + 4) {
   opacity: 0.2;
 }
