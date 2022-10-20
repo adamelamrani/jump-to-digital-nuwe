@@ -23,6 +23,23 @@
   justify-content: flex-end;
 }
 
-img {
+.heading-img {
   margin-bottom: 16px;
+}
+
+.available-perks_tier-zero,
+.available-perks_tier-one,
+.available-perks_tier-two {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.check-icon {
+  margin-right: 10px;
 }
