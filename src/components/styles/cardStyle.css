@@ -6,6 +6,7 @@
   margin-right: 16px;
   background-color: #fff;
   border-radius: 8px;
+  transition: box-shadow 0.7s ease-in-out, border 0.1s ease-in-out;
 }
 
 .tier-zero {
@@ -33,14 +34,55 @@
 .available-perks_tier-two {
   list-style: none;
   padding: 0;
+  margin: 16px 0 0 0;
+}
+
+.available-perks_tier-one > .list-element {
+  color: #fff;
 }
 
 li {
   margin-bottom: 16px;
   display: flex;
   align-items: center;
+  font-size: 14px;
+}
+
+.available-perks_tier-two > li {
+  margin-bottom: 12px;
+}
+
+.available-perks_tier-two > li:last-child {
+  margin-bottom: 16px;
+}
+
+.available-perks_tier-zero > li:nth-child(n + 4) {
+  opacity: 0.2;
+}
+
+.available-perks_tier-one > li:nth-child(n + 6) {
+  opacity: 0.5;
 }
 
 .check-icon {
   margin-right: 10px;
+}
+
+@media (min-width: 950px) {
+  .tier-zero:hover,
+  .tier-one:hover,
+  .tier-two:hover {
+    border: 2px solid;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+
+@media (max-width: 950px) {
+  .tier-zero,
+  .tier-one,
+  .tier-two {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 0;
+  }
 }

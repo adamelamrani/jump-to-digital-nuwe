@@ -6,7 +6,10 @@
   border: 0;
   padding: 0;
   margin: 0;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: "Rubik";
+  font-size: 14px;
+  transition: all 0.5s ease-in-out;
 }
 
 .button_tier-two {
@@ -22,5 +25,24 @@
 
 .button_tier-zero {
   background-color: #fff;
+  border: 1px solid #5a45f2;
+}
+
+.button_tier-one:active {
+  transition: all ease;
+  background-color: #fff;
+  color: #000;
+}
+
+.button_tier-zero:active {
+  transition: all ease;
+  background-color: #5a45f2;
+  color: #fff;
+}
+
+.button_tier-two:active {
+  transition: all ease;
+  background-color: #fff;
+  color: #5a45f2;
   border: 1px solid #5a45f2;
 }
