@@ -25,9 +25,9 @@ const Modal: React.FC<ModalProps> = ({ setOpenModal }) => {
             type="email"
             placeholder="email@example.com"
             onChange={(e) => {
-              if (emailValidation(e.target.value)) {
-                setIsEmailWrong(false);
-              }
+              !emailValidation(e.target.value)
+                ? setIsEmailWrong(true)
+                : setIsEmailWrong(false);
             }}
           />
           {isEmailWrong && (
